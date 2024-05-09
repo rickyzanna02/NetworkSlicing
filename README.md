@@ -2,7 +2,7 @@
 ![Topology](/images/topo2.png) 
 
 
-## Section links
+## Index
 - [Project Description](#Project-Description)
 - [Link](#Link)
 - [Implementation Details](#Implementation-Details)
@@ -17,12 +17,14 @@ This is the project of the Softwarized and Virtualized Mobile Networks course of
 The main goal of this project is to implement a network slicing approach to enable dynamic activation/de-activation of network slices via CLI/GUI commands.
 On demand means that he user can activate and deactivate different slices.
 
+[Back to the index](#Index)
+
 
 ## Link
 
 [**Presentation Link**](https://docs.google.com/presentation/d/1hqmH79rsrdqUngCE98Dunrr3GfWYEA-AQCRVIK0HSg8/edit#slide=id.g2d9d05aa730_0_121)
 
-[**Demo Link**](link demo) 
+[**Demo Link**](https://drive.google.com/file/d/1sL0gRAAZAHa_UP8SXe797LwbBXhjpjua/view?usp=sharing) 
 
 ## Implementation Details
 **ENVIRONMENT:**
@@ -120,16 +122,17 @@ This terminal shows the CLI for choosing the desired mode
 
 ## Demo
 
-Questa sezione spiegherà un esempio di utilizzo completo di questa applicazione.
-Supponiamo di aver gia eseguito l'installazione e di avere 2 terminali aperti  (come spiegato nella sezione precedente).
+This section will explain a complete usage example of this application.
+It is based on the demo video in the "Link" section.
+Suppose you have already done the installation and have 2 open terminals (as explained in the previous section).
 
 | Firts terminal                                                                     | Second terminal                                     |
 |------------------------------------------------------------------------------------|-----------------------------------------------------|
 |  1. Run: ```make```                                   |  2. Run: ```python3 run.py```. The CLI will appear  ![menu](/images/menu.png)
-|  4. Run diagnostic commands, such as ```pingall``` or ```iperf h1 h4```                                                |  3. Scegliere una modalità, ad esempio:   ```1```. A web browser will appear to graphically display the active slices based on the chosen mode                                                           |
+|  4. Run diagnostic commands, such as ```pingall``` or ```iperf h1 h4```                                                |  3. Choose a mod, for example:   ```1```. A web browser will appear to graphically display the active slices based on the chosen mode                                                           |
 |  ![ping](/images/ping1.png)  ![iperf](/images/iperf1.png)        |    ![topo](/images/topo1.png)         |       
 |5. Repeat steps 3 and 4 to test all modes|      |                                          
-|6. Close mininet: ```exit``` | Chiudere la CLI con l'opzione:  ```4``` |
+|6. Close mininet: ```exit``` | Close the CLI with the option:  ```4``` |
        
 
 Note 1: Theiperf host1 host2 command will not give any results if executed with two hosts which, based on the active slices and the network topology, cannot communicate with each other. You will need to stop it manually with Ctrl+C
