@@ -137,15 +137,15 @@ Suppose you have already done the installation and have 2 open terminals (as exp
 | Firts terminal                                                                     | Second terminal                                     |
 |------------------------------------------------------------------------------------|-----------------------------------------------------|
 |  1. Run: ```make```                                   |  2. Run: ```python3 run.py```. The CLI will appear  ![menu](/images/menu.png)
-|  4. Run diagnostic commands, such as ```pingall``` or ```iperf h1 h4```                                                |  3. Choose a mod, for example:   ```1```. A web browser will appear to graphically display the active slices based on the chosen mode                                                           |
+|  4. Run diagnostic commands, such as ```pingall``` or ```iperf h1 h4```                                                |  3. Choose a mode, for example:   ```1```. A web browser will appear to graphically display the active slices based on the chosen mode                                                           |
 |  ![ping](/images/ping1.png)  ![iperf](/images/iperf1.png)        |    ![topo](/images/topo1.png)         |       
 |5. Repeat steps 3 and 4 to test all modes|      |                                          
 |6. Close mininet: ```exit``` | Close the CLI with the option:  ```4``` |
        
 
-Note 1: Theiperf host1 host2 command will not give any results if executed with two hosts which, based on the active slices and the network topology, cannot communicate with each other. You will need to stop it manually with Ctrl+C
+Note 1: The ```iperf <host1> <host2>``` command will not give any results if executed with two hosts which, based on the active slices and the network topology, cannot communicate with each other. You will need to stop it manually with ```Ctrl+C```
 
-Note 2: pingall wastes time trying to get all hosts to communicate with each other: the following command is an alternative to test communication between 2 hosts:
+Note 2: ```pingall``` wastes time trying to get all hosts to communicate with each other: the following command is an alternative to test communication between 2 hosts:
 ```<host1> ping <host2>```
 
 [Back to the index](#Index)
