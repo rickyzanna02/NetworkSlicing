@@ -26,6 +26,8 @@ On demand means that he user can activate and deactivate different slices.
 
 [**Demo Link**](https://drive.google.com/file/d/1sL0gRAAZAHa_UP8SXe797LwbBXhjpjua/view?usp=sharing) 
 
+[Back to the index](#Index)
+
 ## Implementation Details
 **ENVIRONMENT:**
 
@@ -64,6 +66,8 @@ http://localhost:8080
 
 Note: the web server is designed to receive only one request and then it is automatically stopped, so as not to stop the execution of the main program by remaining continuously running.
 
+[Back to the index](#Index)
+
 
 ## Project Layout
 ![Project Layout](/images/tree.png)
@@ -82,6 +86,8 @@ Note: the web server is designed to receive only one request and then it is auto
 **print_network.py:** allows you to view the active topology via the web.
 
 **run.py:** and **Makefile:** are used for the execution of the project. Details will be discussed later.
+
+[Back to the index](#Index)
 
 
 ## Installation
@@ -120,6 +126,8 @@ python3 run.py
 ```
 This terminal shows the CLI for choosing the desired mode
 
+[Back to the index](#Index)
+
 ## Demo
 
 This section will explain a complete usage example of this application.
@@ -140,6 +148,10 @@ Note 1: Theiperf host1 host2 command will not give any results if executed with 
 Note 2: pingall wastes time trying to get all hosts to communicate with each other: the following command is an alternative to test communication between 2 hosts:
 ```<host1> ping <host2>```
 
+[Back to the index](#Index)
+
 ## Contacts
 
 Riccardo Zannoni - riccardo.zannoni@studenti.unitn.it
+
+[Back to the index](#Index)
